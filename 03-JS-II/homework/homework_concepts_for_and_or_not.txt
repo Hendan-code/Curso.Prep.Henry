@@ -1,0 +1,41 @@
+En un archivo de texto separado que debes crear, escribe explicaciones de los siguientes conceptos como si se lo estuvieras explicando a un niño de 12 años. Hacer esto te ayudará a descubrir rápidamente cualquier agujero en tu comprensión.
+for
+&&, ||, !
+
+for.-
+La sentencia for es un bucle que  se utiliza para repetir instrucciones por un número determinado de veces, siempre y cuando se cumplan las condiciones dadas.
+Un bucle for tiene la siguiente sintaxis:
+for (i=0;i<10;1++) {
+    //codigo a ejecutar en cada iteración
+}
+Se debe tener claro que las partes dentro del parentesis de la sentencia for, significan lo siguiente;
+i=0 ----> inicialización
+i<10 ----> condición -----> hasta donde se ejecuta el código (Es importante esta parte porque aquí se define cuando termina el bucle y se evita que sea un bucle infinito)
+i++ ----> actualización  
+
+
+&& - Operador AND
+El operador && significa "y", y se relaciona de cierta manera con la matemática de lógica inferencial.
+Para entender mejor pondremos un ejemplo;
+if (a<0 && b===2){
+    //Este código se ejecutará si a<0 es verdadero "Y" b===2 es verdadero
+}
+//Caso contrario saldra del if y continuará las siguientes sentencias
+
+Este operador evalua 2 expresiones dentro de una sentencia if, y solo si ambas condiciones son verdaderas se ejecutará el codigo dentro del operador if, caso contrario no.
+
+
+|| - Operador OR 
+El operador || significa "o", también lo podemos relacionar con la matemática de lógica inferencial.
+if (a<0 || b===2){
+    //Este código se ejecutará si una de las 2 condiciones es verdadera.
+    //Y no se ejecutará solo en el caso de que ambas condiciones sean falsas.
+}
+
+Como vemos este operador evalua 2 expresiones dentro de la sentencia if, y con que al menos una sea verdadera el codigo dentro de la sentencia se ejecuta, caso contrario sale del if.
+
+
+! - Operador NOT
+Este operador es sencillo de entender ya que es la negación de algo y devuelve el valor contrario, por ejemplo:
+!true   -----> devuelve false
+!false -----> devuelve true
