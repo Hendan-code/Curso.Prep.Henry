@@ -1,0 +1,23 @@
+En un archivo de texto separado que debes crear, escribe explicaciones de los siguientes conceptos como si se lo estuvieras explicando a un niño de 12 años. Hacer esto te ayudará a descubrir rápidamente cualquier agujero en tu comprensión.
+Arrays
+-----------
+Un arreglo es un conjunto de datos ordenados en forma de una lista o como comunmente podriamos conocer como una matriz.
+La longitud de un arreglo, además de todos sus elementos son variables.
+Un array se define de la siguiente manera.
+var arraymodelo=['variable 1', 'variable 2', 'variable 3',...,'variable n'];
+
+Cabe mencionar que las variables o elementos dentro del arreglo pueden ser desde variables string, numéricas, boleanos, funciones y hasta nuevos arreglos.
+Dimensión de un Array
+-----------
+Un arreglo no vacio, desde su definición tiene una cantidad de elementos iniciales. El orden númerico de un arreglo comienza en 0, y se puede acceder a cualquier elemento de dicho arreglo.
+Se accede a un elemento de la siguiente manera:
+console.log(arraymodelo[1]);
+
+Se pueden incorporar o eliminar elementos a nuestros arreglos definidos inicialmente:
+.push ----> agrega un elemento al final de la matriz.
+.pop ----> elimina el ultimo elemento de la matriz.
+.unshift ----> agrega un elemento al inicio de la matriz.
+.shift ----> elimina el primer elemento de la matriz.
+
+Un dato importante a considerar de los arrays dentro de JavaScript es que como no es un lenguaje fuertemente tipado, las matrices tampoco necesitan ser tipadas.
+Las matrices en JavaScript pueden contener multiples tipos de datos diferentes tal como lo habiamos definido anteriormente.
