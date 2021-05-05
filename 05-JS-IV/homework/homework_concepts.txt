@@ -1,0 +1,59 @@
+En un archivo de texto separado que debes crear, escribe explicaciones de los siguientes conceptos como si se lo estuvieras explicando a un niño de 12 años. Hacer esto te ayudará a descubrir rápidamente cualquier agujero en tu comprensión.
+
+Objetos
+Propiedades
+Métodos
+Bucle for…in
+Notación de puntos vs notación de corchetes
+
+
+OBJETOS.-
+Un objeto es una colección de propiedades, dichas propiedades son una asociación del par key:value (clave: valor).
+Dicho de otra manera los objetos son contenedores que contienen datos o información sobre una sola cosa.
+A continuación un ejemplo de un objeto:
+var objeto={
+    propiedad1: 'valor de la propiedad1',
+    propiedad2: 'valor de la propiedad2',
+    ...
+    propiedadN: 'valor de la propiedadN'
+}
+
+Los valores de las propiedades pueden ser string, númericos, buleanos, funciones, array o un nuevo objeto.
+
+MÉTODOS.-
+Dentro de un objeto se puede establecer una función como valor de una propidad, dichas funciones guardadas en los objetos se denominan métodos.
+Como por ejemplo:
+var nuevoobjeto={
+    propiedadmetodo: function() {
+        console.log('Hola Mundo!')
+    }
+}
+
+Si llamamos el metodo de este objeto seria de la siguiente manera y nos fijamos que se imprime Hola Mundo!.
+nuevoobjeto.propiedadmetodo(); // Hola Mundo!
+
+BUCLES FOR - IN
+La instrucción for - in realiza una iteración sobre todas las propiedades que se pueden enumerar de un objeto que esta codificado por cadenas.
+La sintaxis es ligeramente diferente a la de solamente un for, ya que se declara también la palabra clave in y el nombre del objeto. 
+Esto permite que la iteración recorra cada clave del objeto y se finalice cuando se hayan completado todas las claves.
+Se puede usar de la siguiente manera:
+const objeto = { 
+    nombre: 'Henry', 
+    edad: 32, 
+    deporte: 'futbol' 
+    }
+for (const propiedad in objeto) {
+  console.log(`${propiedad}: ${objeto[propiedad]}`);
+}
+// Se imprimirá lo siguiente
+// "nombre: Henry"
+// "edad: 32"
+// "deporte: futbol"
+
+NOTACION DE PUNTOS VS NOTACION DE CORCHETES 
+Con la notación de puntos se puede llamar al nombre del objeto, seguido de un punto y el nombre de la clave, de la siguiente manera.
+objeto.propiedad; // se llama al valor de la propiedad en mención
+
+Mientras que con la notación en corchetes es como llamar a un elemento en una matriz, aunque con corchetes se debe tener en cuenta una cadena o número o una variable que apunte a una cadena o numero.
+objeto[propiedad];
+Generalmente los corchetes siempre se usan con variables.
