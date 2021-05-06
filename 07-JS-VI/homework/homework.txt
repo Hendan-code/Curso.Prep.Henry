@@ -1,0 +1,50 @@
+En un archivo de texto separado que debes crear, escribe explicaciones de los siguientes conceptos como si se lo estuvieras explicando a un niño de 12 años. Hacer esto te ayudará a descubrir rápidamente cualquier agujero en tu comprensión.
+Funciones Callback
+Los callbacks son funciones que tienen la capacidad de pasar una funcion como argumento a otra función.
+Estas funciones se pueden llamar en cualquier momento y pasar argumentos dentro de la función.
+La convención es usar cb como argumento para la variable que se usará de callback.
+//EJEMPLO DE USO DE CALLBACKS
+function decirHolaAlUsuario (usuario) {
+  return 'Hola' + usuario + '!'
+}
+function decirAdiosAlUsuario (usuario) {
+  return 'Adiós' + usuario + '!'
+}
+function crearSaludo (usuario, decirHolaAlUsuario) {
+  return decirHolaAlUsuario(usuario);
+}
+crearSaludo(' Henry', decirHolaAlUsuario);
+crearSaludo(' Henry', decirAdiosAlUsuario);
+
+
+//METODO fOREACH EN ARREGLOS
+var alumnos = ['Juan', 'Carlos', 'Adrian', 'José', 'María', 'Manuela'];
+
+//Como mostrar cada uno de los alumnos sin callback
+for (var i=0; i<alumnos.length; i++) {
+  console.log (alumnos[i]);
+}
+
+//Como mostrar cada uno de los alumnos con callback
+alumnos.forEach(function(elemento, indice) {
+  console.log (elemento);
+})
+
+//METODO MAP EN ARREGLOS
+var numeros = [1, 5, 4, 8];
+var doubles = numeros.map (function(x) {
+  return x*2;
+})
+
+//METODO REDUCE
+var numers = [1, 2, 3, 4, 5, 6, 7];
+//sin callbacks
+var suma = 0;
+for (var i=0; i<numers.length; i++) {
+  suma = suma + numers [i];
+}
+
+//con callbacks
+var sumaReduce = numers.reduce (function (acumulador, elemento) {
+  return acumulador + elemento;
+}, 0);
