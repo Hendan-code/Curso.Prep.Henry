@@ -1,0 +1,21 @@
+En un archivo de texto separado que debes crear, escribe explicaciones de los siguientes conceptos como si se lo estuvieras explicando a un niño de 12 años. Hacer esto te ayudará a descubrir rápidamente cualquier agujero en tu comprensión.
+prototype
+Constructors (de Clases)
+
+PROTOTYPE.-
+Un objeto en JavaScript tiene otro objeto, llamado prototype. Cuando pedimos a un objeto una propiedad que no tiene, la busca en su prototipo. 
+De esta manera, un prototipo es otro objeto que se utiliza como una fuente de propiedades alternativa.
+Prototype es una propiedad de Object.
+El objeto del que se derivan todos los demás objetos y esta propiedad es, a su vez, un objeto. 
+Por tanto, el prototipo último de un objeto es Object.prototype. 
+Este prototipo padre tiene métodos que comparten todos los objetos.
+
+Las funciones y los arrays, que también son objetos, tienen prototipos con propiedades específicas.
+De esta manera.
+Function.prototype ------> tiene métodos como bind y call.
+Array.prototype -----> tiene métodos como slice y sort.
+
+Constructors (DE CLASES).-
+El método constructor es un método especial para crear e inicializar un objeto creado con una clase. 
+Solo puede haber un método especial con el nombre "constructor" en una clase. 
+Si esta contiene mas de una ocurrencia del método constructor, se arrojará un Error SyntaxError.
